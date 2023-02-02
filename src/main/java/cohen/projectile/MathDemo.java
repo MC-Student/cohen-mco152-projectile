@@ -1,12 +1,12 @@
-package Cohen.Projectile;
+package cohen.projectile;
 
 public class MathDemo
 {
     public static void main(String[] args)
     {
-        Projectile rock = new Projectile(39, 77, 0);
+        Projectile rock = new Projectile(39, 77);
 
-        while (rock.getTime() < 11)
+        for (int i = 0; i < 11; i++)
         {
             System.out.println("t = " + rock.getTime() + ": (" + rock.getX() + ", " + rock.getY() + ")");
             rock.incTime(1);

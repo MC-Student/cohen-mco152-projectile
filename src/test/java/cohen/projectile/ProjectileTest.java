@@ -1,4 +1,4 @@
-package Cohen.Projectile;
+package cohen.projectile;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +10,10 @@ class ProjectileTest
     public void getX()
     {
         //given
-        Projectile projectile = new Projectile(39, 77, 6);
+        Projectile projectile = new Projectile(39, 77);
 
         //when
+        projectile.incTime(6);
         double x = projectile.getX();
 
         //then
@@ -23,9 +24,10 @@ class ProjectileTest
     public void getY()
     {
         //given
-        Projectile projectile = new Projectile(39, 77, 6);
+        Projectile projectile = new Projectile(39, 77);
 
         //when
+        projectile.incTime(6);
         double y = projectile.getY();
 
         //then
